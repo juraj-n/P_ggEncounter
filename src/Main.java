@@ -1,9 +1,9 @@
 import fri.shapesge.Manazer;
-import herneProstredie.HernaPlocha;
+import gameEnvironment.GameBoard;
 
 public class Main {
     public static void main(String[] args) {
-          HernaPlocha plocha = new HernaPlocha();
+          GameBoard plocha = new GameBoard();
 
           Manazer manazer = new Manazer();
           manazer.spravujObjekt(plocha);

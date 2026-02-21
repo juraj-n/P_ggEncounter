@@ -1,6 +1,6 @@
-package postavy;
+package characters;
 
 public interface Deletable {
     @SuppressWarnings("unused")
-    void odstran();
+    void delete();
 }

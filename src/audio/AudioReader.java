@@ -1,4 +1,4 @@
-package hudba;
+package audio;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -16,8 +16,8 @@ public class AudioReader {
                     fileNames.add(file.getName().replace(".wav",""));
                 }
             }
-            // Pridana moznost "Zrus" - vypina prehravanie Clipov v pripade zlovenia
-            fileNames.add("Zrus");
+            // Option "Cancel" - turns off the Clip if chosen
+            fileNames.add("Cancel");
         }
         return fileNames.toArray(new String[0]);
     }

@@ -7,7 +7,7 @@ public class PropReader {
     public static final String[] propOptions = getPropNames();
     private static String[] getPropNames() {
         List<String> fileNames = new ArrayList<>();
-        File propFolder = new File("res\\pics\\kulisa");
+        File propFolder = new File("res\\pics\\prop");
         if (propFolder.exists() && propFolder.isDirectory()) {
             File[] files = propFolder.listFiles((dir, name) -> name.endsWith(".png"));
             if (files != null) {

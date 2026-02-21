@@ -1,14 +1,14 @@
-package herneProstredie;
+package gameEnvironment;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WallpaperReader {
-    public static final String[] wallpaperOptions = getPozadieNames();
-    private static String[] getPozadieNames() {
+public class BackgroundReader {
+    public static final String[] backgroundOptions = getBackgroundName();
+    private static String[] getBackgroundName() {
         List<String> fileNames = new ArrayList<>();
-        File picsFolder = new File("res\\pics\\pozadie");
+        File picsFolder = new File("res\\pics\\background");
         if (picsFolder.exists() && picsFolder.isDirectory()) {
             File[] files = picsFolder.listFiles((dir, name) -> name.endsWith(".png"));
             if (files != null) {

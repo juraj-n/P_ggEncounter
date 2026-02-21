@@ -1,4 +1,4 @@
-package hudba;
+package audio;
 
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
@@ -10,7 +10,7 @@ import java.util.List;
 public class AudioPlayer {
     private static final List<Clip> activeClips = new ArrayList<>();
 
-    // POZOR!! Audio súbory musia byť .wav
+    // Audio files must be .wav format !!!
     public static void playAudio(String name) {
         if(!activeClips.isEmpty()) {
             stopAudio();
